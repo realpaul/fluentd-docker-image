@@ -14,6 +14,7 @@ RUN apk --no-cache --update add \
     echo 'gem: --no-document' >> /etc/gemrc && \
     gem install fluentd -v 0.12.21 && \
     gem install fluent-plugin-mongo -v 0.7.12 && \
+    gem install bson_ext && \
     apk del build-base ruby-dev && \
     rm -rf /tmp/* /var/tmp/* /var/cache/apk/*
 

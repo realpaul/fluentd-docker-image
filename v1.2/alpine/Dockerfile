@@ -29,6 +29,8 @@ RUN apk update \
  && gem install oj -v 3.3.10 \
  && gem install json -v 2.1.0 \
  && gem install fluentd -v 1.2.2 \
+ && gem install fluent-plugin-mongo -v 1.1.1 && \
+ && gem install bson_ext && \
  && apk del .build-deps \
  && rm -rf /var/cache/apk/* \
  && rm -rf /tmp/* /var/tmp/* /usr/lib/ruby/gems/*/cache/*.gem
